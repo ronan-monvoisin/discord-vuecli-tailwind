@@ -1,0 +1,97 @@
+[
+    {
+        "id": 0,
+        "name": "Générale 0",
+        "messages": [
+            {
+                "id": 10000,
+                "authorId": 1,
+                "date": "15/12/2021",
+                "content": "Test de message !"
+            },
+            {
+                "id": 10001,
+                "authorId": 1,
+                "date": "15/12/2021",
+                "content": "Test de message !"
+            },
+            {
+                "id": 10002,
+                "authorId": 1,
+                "date": "15/12/2021",
+                "content": "Test de message !"
+            },
+            {
+                "id": 10003,
+                "authorId": 1,
+                "date": "15/12/2021",
+                "content": "Test de message !"
+            },
+            {
+                "id": 10004,
+                "authorId": 1,
+                "date": "15/12/2021",
+                "content": "Test de message !"
+            },
+            {
+                "id": 10005,
+                "authorId": 1,
+                "date": "15/12/2021",
+                "content": "Test de message !"
+            },
+            {
+                "id": 10006,
+                "authorId": 1,
+                "date": "15/12/2021",
+                "content": "Test de message !"
+            },
+            {
+                "id": 10007,
+                "authorId": 1,
+                "date": "15/12/2021",
+                "content": "Test de message !"
+            },
+            {
+                "id": 10008,
+                "authorId": 1,
+                "date": "15/12/2021",
+                "content": "Test de message !"
+            },
+            {
+                "id": 10009,
+                "authorId": 1,
+                "date": "15/12/2021",
+                "content": "Test de message !"
+            },
+            {
+                "id": 10010,
+                "authorId": 1,
+                "date": "15/12/2021",
+                "content": "Test de message !"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Chan 1",
+        "messages": [
+            {
+                "id": 10000,
+                "authorId": 1,
+                "date": "15/12/2021",
+                "content": "Test de message !"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name":"blibli",
+        "messages":[
+            {
+                "id":10000,
+                "author":"Ronan",
+                "content":"Test de message !"
+            }
+        ]
+    }
+]

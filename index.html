@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+
+<head>
+  <script>
+    let serverData = {};
+    let channelData = [{
+        "id": 0,
+        "name": "Générale 0",
+        "messages": [{
+            "id": 10000,
+            "authorId": 1,
+            "date": "15/12/2021",
+            "content": "Test de message !"
+          },
+          {
+            "id": 10001,
+            "authorId": 1,
+            "date": "15/12/2021",
+            "content": "Test de message !"
+          },
+          {
+            "id": 10002,
+            "authorId": 1,
+            "date": "15/12/2021",
+            "content": "Test de message !"
+          },
+          {
+            "id": 10003,
+            "authorId": 1,
+            "date": "15/12/2021",
+            "content": "Test de message !"
+          },
+          {
+            "id": 10004,
+            "authorId": 1,
+            "date": "15/12/2021",
+            "content": "Test de message !"
+          },
+          {
+            "id": 10005,
+            "authorId": 1,
+            "date": "15/12/2021",
+            "content": "Test de message !"
+          },
+          {
+            "id": 10006,
+            "authorId": 1,
+            "date": "15/12/2021",
+            "content": "Test de message !"
+          },
+          {
+            "id": 10007,
+            "authorId": 1,
+            "date": "15/12/2021",
+            "content": "Test de message !"
+          },
+          {
+            "id": 10008,
+            "authorId": 1,
+            "date": "15/12/2021",
+            "content": "Test de message !"
+          },
+          {
+            "id": 10009,
+            "authorId": 1,
+            "date": "15/12/2021",
+            "content": "Test de message !"
+          },
+          {
+            "id": 10010,
+            "authorId": 1,
+            "date": "15/12/2021",
+            "content": "Test de message !"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Chan 1",
+        "messages": [{
+          "id": 10000,
+          "authorId": 1,
+          "date": "15/12/2021",
+          "content": "Test de message !"
+        }]
+      },
+      {
+        "id": 3,
+        "name": "blibli",
+        "messages": [{
+          "id": 10000,
+          "authorId": 1,
+          "date": "15/12/2021",
+          "content": "Test de message !"
+        }]
+      }
+    ];
+    let users = [{
+      id: 2459,
+      name: "Ronan"
+    }, {
+      id: 1,
+      name: "One"
+    }];
+    fetch('./public/servers-data.json')
+      .then(res => res.json())
+      .then((out) => {
+        console.log('serverData: ', out);
+        serverData = out;
+      }).catch(err => console.error(err));
+
+    fetch('./public/channels-data.json')
+      .then(res => res.json())
+      .then((out) => {
+        console.log('channelData: ', out);
+        channelData = out;
+      }).catch(err => console.error(err));
+
+    window.getServer = function (id) {
+      console.log('serverData: ', serverData[id]);
+      return serverData[id];
+    }
+
+    window.getServers = function () {
+      console.log('serverData: ', serverData);
+      return serverData;
+    }
+
+    window.getChannels = function () {
+      console.log('channelData: ', channelData);
+      return channelData;
+    }
+
+    window.getChannel = function (id) {
+      return channelData[id];
+    }
+
+    window.getUser = function (id) {
+      return users[id];
+    }
+  </script>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <title>Discord Front</title>
+</head>
+
+<body>
+  <div id="app" class="w-screen h-screen bg-zinc-700 text-zinc-200 Whitney"></div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
