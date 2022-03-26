@@ -104,14 +104,14 @@
       id: 1,
       name: "One"
     }];
-    fetch('./public/servers-data.json')
+    fetch('./servers-data.json')
       .then(res => res.json())
       .then((out) => {
         console.log('serverData: ', out);
         serverData = out;
       }).catch(err => console.error(err));
 
-    fetch('./public/channels-data.json')
+    fetch('./channels-data.json')
       .then(res => res.json())
       .then((out) => {
         console.log('channelData: ', out);

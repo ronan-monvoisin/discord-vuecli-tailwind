@@ -70,7 +70,7 @@ export default {
                 <figure>
                     <img
                         class="relative flex items-center justify-center h-10 w-10 mt-2 mb-2 mx-auto shadow-lg rounded-3xl cursor-pointer"
-                        src="/src/assets/rosie-avatar.png"
+                        src="../assets/rosie-avatar.png"
                         alt="{{user.name}}#{{ user.id }}"
                     />
                 </figure>
